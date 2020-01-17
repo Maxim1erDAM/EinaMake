@@ -2,19 +2,6 @@
 #include "calc.h"
 
 
-int major(int op1, int op2){
-	if (op1>op2){
-		return (op1);
-	}
-	if (op2>op1){
-		return (op2);
-	}
-}
-
-int mitjana(int op1, int op2){
-	int mitjana=((op1+op2)/2);
-	return mitjana;
-}
 
 int main(void){
 	int a=10;
@@ -23,6 +10,6 @@ int main(void){
 	printf("La resta entre %d i %d és %d\n", a, b, resta(a,b));
 	printf("La multiplicació de %d i %d és %d\n", a, b, multiplica(a,b));
 	printf("La divisió entre %d i %d és %d\n", a, b, divideix(a,b));
-	printf("El major entre %d i %d és %d\n", a, b, major(a,b));
-	printf("La mitjana entre %d i %d és %d\n", a, b, mitjana(a,b));
+	printf("El major entre %d i %d és %d\n", a, b, majorque(a,b));
+	printf("La mitjana entre %d i %d és %d\n", a, b, mitja(a,b));
 }
